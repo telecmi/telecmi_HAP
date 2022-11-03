@@ -5,10 +5,10 @@
 
 ### Step 1
 
-When customer call to HAP number (18000xxxx) ,TeleCMI will send following data in POST method and waiting for response too play Music file based on the role or location ,etc
+When customer call to HAP number (18000xxxx) ,TeleCMI will send following data in **POST** method and waiting for response too play Music file based on the role or location ,etc
 
 
-Below is the  parameters send from TeleCMI in JSON 
+Below is the  parameters send from TeleCMI in **JSON** 
 
 | Attribute     |      Description                   |  Allowed Values	| Default Value |
 |  ---          |    ---                             | ---              | ---           |
@@ -18,7 +18,7 @@ Below is the  parameters send from TeleCMI in JSON
 | time      | Time of the call | timestamp   | 1560008080           |
 | cmiuuid      | Unique ID of the call | String   | 4249d25c-d181-4f3e-9d71-804f13d8aa24          |
 
-Bellow is the sample request from TeleCMI
+Bellow is the sample **JSON** request from TeleCMI
 
 ```javascript
 {
@@ -34,10 +34,10 @@ Bellow is the sample request from TeleCMI
 
 ### Step 2
 
-Once TeleCMI receive JSON response from HAP server , TeleCMI will play music to HAP customer and get input like press 1 for Tamil,2 for English.Once customer will press the button TeleCMI will POST HTTP  JSON data with following parameters 
+Once TeleCMI receive JSON response from HAP server , TeleCMI will play music to HAP customer and get input like press 1 for Tamil,2 for English.Once customer will press the button TeleCMI will **POST** HTTP  **JSON** data with following parameters 
 
 
-Below is the  parameters send from TeleCMI in JSON 
+Below is the  parameters send from TeleCMI in **JSON **
 
 | Attribute     |      Description                   |  Allowed Values	| Default Value |
 |  ---          |    ---                             | ---              | ---           |
@@ -46,7 +46,7 @@ Below is the  parameters send from TeleCMI in JSON
 | to      | HAP Tollfree number	  | String | 1800xxxx          |
 | cmiuuid      | Unique ID of the call | String   | 4249d25c-d181-4f3e-9d71-804f13d8aa24          |
 
-Bellow is the sample request from TeleCMI
+Bellow is the sample **JSON** request from TeleCMI
 
 ```javascript
 {
